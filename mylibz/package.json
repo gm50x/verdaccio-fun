@@ -1,0 +1,17 @@
+{
+  "name": "@gedai/mylibz",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "files": [
+    "src/"
+  ],
+  "private": false,
+  "publishConfig": {
+    "registry": "http://localhost:4873"
+  },
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

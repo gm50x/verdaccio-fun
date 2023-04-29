@@ -1,0 +1,18 @@
+version: "3"
+
+networks:
+  skynet:
+    driver: bridge
+
+services:
+  verdaccio:
+    image: verdaccio/verdaccio:5.24
+    container_name: verdaccio
+    environment:
+      - VERDACCIO_PORT=4873
+    ports:
+      - 4873:4873
+    networks:
+      - skynet
+    volumes:
+      - "./verdaccio/conf:/verdaccio/conf"
